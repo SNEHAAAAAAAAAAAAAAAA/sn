@@ -1,0 +1,27 @@
+#way1
+def eligible(age):
+	if age>=18:
+		print('eligible for vote')
+	else:
+		print(' not eligible for vote')
+age=int(input())
+eligible(age)
+#way2
+def eligible(age):
+	if age>=18:
+		return 'eligible for vote'
+	else:
+		return ' not eligible for vote'
+age=int(input())
+print(eligible(age))
+#way3
+def eligible(age):
+	if age>=18:
+		return True
+	else:
+		return False
+age=int(input())
+if(eligible(age)):
+	print('eligible for vote')
+else:
+	print('not eligible for vote')
